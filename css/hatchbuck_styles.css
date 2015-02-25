@@ -1,0 +1,180 @@
+#system_notice_area_dismiss{
+color: #FFFFFF;
+cursor: pointer;
+}
+.system_notice_area_style1 {
+	background: #00C348;
+	border: 1px solid green;
+}
+
+.system_notice_area_style0 {
+	background: #FA5A6A;
+	border: 1px solid orange;
+}
+
+
+#button {
+	width: 140px;
+	background-color: #E4E4E4;
+	cursor: pointer;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+
+#button:hover {
+	border: 1px solid #797979;
+}
+
+a {
+	text-decoration: none;
+}
+
+label{
+	cursor:default;
+}
+
+#img{
+	width:20px;
+	height: 20px;
+}
+
+#tdCenter{
+	text-align: center;
+}
+.bottonWidth{
+	width:120px;
+}
+#buttonDesign{
+	width:120px;
+}
+
+#bottomBorderNone {
+	border-bottom:none;
+}
+
+legend{
+	font-size: 14px;
+}
+
+/*admin style*/
+
+#system_notice_area {
+	position: fixed;
+	margin-bottom:40px;
+	left:25%;
+	width:50%;
+	height:20px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	font-weight:bold;
+	display:none;
+	padding:3px;
+	color: #000000;
+	text-align: center;
+	top: 0px;
+z-index:100000;
+	}
+	
+
+  
+i.hatchbuck-own-icon {
+	background-image: url('../images/logo.png');
+}
+
+#text {margin:50px auto; width:500px}
+.hotspot {color:#900; padding-bottom:1px; border-bottom:1px dotted #900; cursor:pointer}
+
+#tt {position:absolute; display:block; }
+#tttop {display:block; height:5px; margin-left:5px;}
+#ttcont {display:block; padding:2px 10px 3px 7px;  margin-left:-400px; background:#666; color:#FFF}
+#ttbot {display:block; height:5px; margin-left:5px; }
+
+/*new theme*/
+#poststuff h3{
+  cursor:auto !important;
+}
+
+#screen-options-link-wrap.noArrowdown a:after{
+  content:"";
+}
+
+#itsec-meta-link-wrap a.show-settings{
+  float:right;
+}
+
+.itsec-setup-dialog .ui-dialog-titlebar{
+  background: none repeat scroll 0 0 #2ea2cc;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: normal;
+  height: auto;
+  line-height: 2.5;
+  padding: 0 1em;
+}
+
+.itsec-setup-dialog .ui-dialog-titlebar button{
+   color: #5bbdd5;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    right: 15px;
+    top: 8px;
+    width: 30px;
+}
+
+.hb-tab-market-help{
+  background-color:#f37736 !important;
+}
+
+.hb-tab-market-help a{
+  color:#fff !important;
+}
+/* viktors edits */
+.hatchbuck-form{ margin-bottom: 15px; }
+.hfw-privacy{ color: #999; }
+.hatchbuck-form label{ display: block;}
+.hatchbuck-form input[type=text],
+.hatchbuck-form input[type=email],
+.hatchbuck-form textarea{
+	margin-bottom: 10px;
+	width: 100%;
+}
+.form-required{ color:red; padding-left: 5px;}
+.hb-form-submit { width: 100%; text-align: right; }
+#itsec_intro_modal { padding-top: 0 !important; }
+.hatchbuck-training { margin-bottom: 20px; }
+
+.success{color:#4cae4c;}
+.danger{color:#d43f3a;}
+
+#signup-form label{
+	display: block;
+}
+#signup-form input[type=text],
+#signup-form input[type=email]{
+	margin-bottom: 10px;
+}
+
+#signup-form input{ width: 100%; }
+
+/*plugin*/
+.plugin-div{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.plugin-list li{
+  float: left;
+  margin: 7px;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.plugin-list li img{
+  width:100%;
+}
