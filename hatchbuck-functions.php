@@ -19,14 +19,20 @@ if(!function_exists('hatchbuck_trim_deep')) {
 
 add_action( 'add_meta_boxes', 'hatchbuck_wpsites_register_metabox' );
 function hatchbuck_wpsites_register_metabox() {
-	add_meta_box(
-		'wpsites_sectionid',
-		'Hatchbuck Website Tracking Code',
-		'hatchbuck_wpsites_meta_box_callback',
-		'post',
-		'normal',
-		'high'
-	);
+  $postTypeTcs = get_option('hatchbuck_postTypeTc');
+  foreach($postTypeTcs as $key => $val){
+    if ($val) {
+      add_meta_box(
+        'wpsites_sectionid',
+        'Hatchbuck Website Tracking Code',
+        'hatchbuck_wpsites_meta_box_callback',
+        $key,
+        'normal',
+        'high'
+      );
+    }
+  }
+	/*
 	add_meta_box(
 		'wpsites_sectionid',
 		'Hatchbuck Website Tracking Code',
@@ -39,16 +45,18 @@ function hatchbuck_wpsites_register_metabox() {
 		'wpsites_sectionid',
 		'Hatchbuck Website Tracking Code',
 		'hatchbuck_wpsites_meta_box_callback',
-		'custom_post_type',
+		'motorcycle',
 		'normal',
 		'high'
 	);	
-    
+    */
 }
 
 //add javascript
 function hatchbuck_my_scripts_method() {
-	wp_enqueue_script('hatchbuck','//app.hatchbuck.com/OnlineForm/js/cdn/jotform.js','',HATCHBUCK_VERSION);
+  if (!is_admin()) {
+		wp_enqueue_script('hatchbuck','//app.hatchbuck.com/OnlineForm/js/cdn/jotform.js','',HATCHBUCK_VERSION);
+	}
 	wp_enqueue_script('hatchbuckloc',plugins_url('js/hatchbuck.js', __FILE__),'',HATCHBUCK_VERSION);
 }
 add_action('wp_enqueue_scripts', 'hatchbuck_my_scripts_method'); // wp_enqueue_scripts action hook to link only on the front-end
